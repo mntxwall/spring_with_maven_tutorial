@@ -141,3 +141,9 @@ mvn archetype:generate -DgroupId=xxxxx -DartifactId=xxx -DarchetypeArtifactId=ma
 
 这时候就在目录下生成hello文件夹，里面src的目录结构是`src/com/maven/test/`
 
+## maven 编译和构建
+
+使用命令`mvn compile`就可编译项目(前提是pom.xml已经配置完成)。
+
+使用命令`mvn package`可把项目打包成`jar`文件（前提是已经在pom.xml是配置完成）。
+
