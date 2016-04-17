@@ -109,3 +109,35 @@ export PATH="${JAVA_HOME}/bin:${MAVEN_HOME}/bin:${PATH}"
 Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-11T00:41:47+08:00)
 ```
 
+## maven项目生成
+
+使用`mvn archetype`插件来生成`maven`项目。
+
+具体命令：
+
+```
+mvn archetype:generate -DgroupId=xxxxx -DartifactId=xxx -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMod=false -DarchetypeCatalog=local
+```
+
+解释一下上面的命令：
+
+`-DgroupId`表示项目使用的groupId，如果之前已经有其他项目了，要把这个做为模块加入的话，取相同的名字。
+
+`-DartifactId`表示该项目的名称，在groupId里需要具备唯一性。
+
+`-DarchetypeArtifactId`表示用archetype生成时候的名字，这个无关紧要。
+
+`-DinteractiveMod=false`表示生成项目的时候不需要应答方式来构建。
+
+`-DarchetypeCatalog`表示使用本地的archetype-catalog.xml不用从网络上下载，如果网带不好的话，会出现maven archetype:generate stuck at generating project in batch mode的错误。
+
+上面一串命令敲完后，在目录下就会生成maven所要求的目录结构，文件夹的名字是`-DartifactId`后所带的参数，源码的目录结构是`-DgroupId`后所带的参数。
+
+例如：
+
+```
+-DgroupId=com.maven.test -DartifactId=hello
+```
+
+这时候就在目录下生成hello文件夹，里面src的目录结构是`src/com/maven/test/`
+
