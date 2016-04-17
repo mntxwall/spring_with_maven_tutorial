@@ -147,3 +147,12 @@ mvn archetype:generate -DgroupId=xxxxx -DartifactId=xxx -DarchetypeArtifactId=ma
 
 使用命令`mvn package`可把项目打包成`jar`文件（前提是已经在pom.xml是配置完成）。
 
+## maven 项目运行
+
+使用`java -cp`命令可以运行构建后的`.jar`文件，具体执行方式如下：
+
+```
+java -cp target/xxxxx com.maven.test.App
+```
+
+target后跟的是`*.jar`名称，`com.maven.test.App`是`main`函数所在的位置。
