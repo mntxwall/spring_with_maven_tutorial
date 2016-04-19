@@ -156,3 +156,74 @@ java -cp target/xxxxx com.maven.test.App
 ```
 
 target后跟的是`*.jar`名称，`com.maven.test.App`是`main`函数所在的位置。
+
+## pom.xml 配置
+
+```xml
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>4.2.5.RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context-support</artifactId>
+      <version>4.2.5.RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+```
+
+加入这两个`dependency`后，在编译时`spring`模块就被加载到`maven`的框架上来了。
+
+但在运行生成的`jar`文件后，会报找不到`spring`模块的错误。
+
+这是因为上面的`dependency`只是在`compile`时加载，运行的时候并没有加载这些模块。
+
+这些运行时组件可以运用`java -cp `来加入到运行的项目中。但这样操作起来比较麻烦，而且`spring`的组件比较多，会导致`java -cp`命令非常长。
+
+所以通过
+
+```
+      <plugin>
+  	<artifactId>maven-dependency-plugin</artifactId>
+	<executions>
+	  <execution>
+	    <id>copy</id>
+	    <phase>package</phase>
+	    <goals>
+	      <goal>copy-dependencies</goal>
+	    </goals>
+	    <configuration>
+	      <outputDirectory>
+		${project.build.directory}/lib
+	      </outputDirectory>
+	    </configuration>
+	  </execution>
+	</executions>
+      </plugin>
+```
+插件把运行时所依赖的`lib`复制到`target/lib`目录下。
+
+然后再通过
+
+```
+      <plugin>
+	<artifactId>maven-jar-plugin</artifactId>
+	<configuration>
+	  <archive>
+	    <manifest>
+	      <addClasspath>true</addClasspath>
+	      <classpathPrefix>lib/</classpathPrefix>
+	      <mainClass>com.wei.test.App</mainClass>
+	    </manifest>
+	  </archive>
+	</configuration>
+      </plugin>
+```
+
+告诉生成的`jar`文件，main 函数在哪个文件里。
+
+配置完后运行`*.jar`文件，不用再使用`java -cp`来指定main函数所在的位置了。
+
+直接使用`java -jar `就可以运行`*.jar`文件。
