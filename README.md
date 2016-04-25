@@ -184,7 +184,7 @@ target后跟的是`*.jar`名称，`com.maven.test.App`是`main`函数所在的�
 
 所以通过
 
-```
+```xml
       <plugin>
   	<artifactId>maven-dependency-plugin</artifactId>
 	<executions>
@@ -207,7 +207,7 @@ target后跟的是`*.jar`名称，`com.maven.test.App`是`main`函数所在的�
 
 然后再通过
 
-```
+```xml
       <plugin>
 	<artifactId>maven-jar-plugin</artifactId>
 	<configuration>
@@ -227,3 +227,7 @@ target后跟的是`*.jar`名称，`com.maven.test.App`是`main`函数所在的�
 配置完后运行`*.jar`文件，不用再使用`java -cp`来指定main函数所在的位置了。
 
 直接使用`java -jar `就可以运行`*.jar`文件。
+
+## spring配置文件的位置
+
+maven把resources文件默认放于`src/main/resources`中。
