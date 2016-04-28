@@ -3,7 +3,6 @@ package com.wei.test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.util.List;
 
 /**
  * Created by cw on 16-4-26.
@@ -13,6 +12,7 @@ public class DataReaderClient {
     private ApplicationContext ctx = null;
 //    private Reader reader = null;
     private ReadService service = null;
+    private TestService ts = null;
 
 
     public DataReaderClient(){
@@ -25,6 +25,21 @@ public class DataReaderClient {
         return service.fetchData();
     }
 
+    public void testServiceInit(){
+        this.ts = (TestService) ctx.getBean("testService");
+    }
+    public void doingServiceTest(){
+        ts.doSomething();
+    }
+
+    public void doingServiceSetTest(){
+        ts.toSetSomething();
+    }
+
+    public void doingReaderTest(){
+        TestReader dr = (TestReader) ctx.getBean("testReader");
+        System.out.println("this is in the DataReaderClient " + dr.getIndex());
+    }
 
     public String getFileName(){
 
@@ -40,9 +55,18 @@ public class DataReaderClient {
     public static void main(String[] args){
 
         DataReaderClient client = new DataReaderClient();
-        System.out.println("Data:" + client.getData());
-        System.out.println(client.getFileName());
-        client.getServiceProperties();
+        //System.out.println("Data:" + client.getData());
+        //System.out.println(client.getFileName());
+        //client.getServiceProperties();
+
+        //初始化TestService
+        client.testServiceInit();
+
+        client.doingServiceTest();
+        client.doingServiceSetTest();
+        client.doingReaderTest();
+
+
 
     }
 }

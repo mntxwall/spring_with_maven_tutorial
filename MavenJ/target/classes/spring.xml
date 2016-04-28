@@ -24,4 +24,10 @@
     <bean name="stringReader" class="com.wei.test.StringReader">
         <constructor-arg value="${string-content}"/>
     </bean>
+    <bean name="testReader" class="com.wei.test.TestReader">
+        <constructor-arg value="10"/>
+    </bean>
+    <bean name="testService" class="com.wei.test.TestService">
+        <constructor-arg ref="testReader"/>
+    </bean>
 </beans>
