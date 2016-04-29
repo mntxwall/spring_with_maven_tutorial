@@ -2,6 +2,7 @@ com/wei/test/ReadService.class
 com/wei/test/Reader.class
 com/wei/test/StringReader.class
 com/wei/test/DataReaderClient.class
+com/wei/test/FactoryMothodTest.class
 com/wei/test/FileReader.class
 com/wei/test/TestService.class
 com/wei/test/TestReader.class

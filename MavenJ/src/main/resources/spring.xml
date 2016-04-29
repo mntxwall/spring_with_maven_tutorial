@@ -30,4 +30,7 @@
     <bean name="testService" class="com.wei.test.TestService">
         <constructor-arg ref="testReader"/>
     </bean>
+    <bean name="factoryTest" class="com.wei.test.FactoryMothodTest" factory-method="helloIndex">
+
+    </bean>
 </beans>
