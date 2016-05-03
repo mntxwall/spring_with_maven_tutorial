@@ -38,6 +38,7 @@ public class DataReaderClient {
     ts.toSetSomething();
   }
 
+
   public void doingReaderTest() {
     TestReader dr = (TestReader) ctx.getBean("testReader");
     System.out.println("this is in the DataReaderClient " + dr.getIndex());
@@ -58,6 +59,10 @@ public class DataReaderClient {
     }
   }
 
+  public void helloNonStatic(){
+    System.out.println(ctx.getBean("fcreater"));
+  }
+
   public static void main(String[] args) {
 
     DataReaderClient client = new DataReaderClient();
@@ -72,6 +77,8 @@ public class DataReaderClient {
     client.doingServiceSetTest();
     client.doingReaderTest();
     client.doingFactoryTest();
+
+    client.helloNonStatic();
 
 
   }
