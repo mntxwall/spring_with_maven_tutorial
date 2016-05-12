@@ -3,12 +3,21 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
-  <bean id="dataSource"
-        class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<!--  <bean id="dataSource"
+        class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
+  <bean id="dataSource2" class="org.apache.commons.dbcp2.BasicDataSource">
+
 
     <property name="driverClassName" value="com.mysql.jdbc.Driver" />
     <property name="url" value="jdbc:mysql://localhost:3306/spring" />
     <property name="username" value="root" />
+    <property name="password" value="cwmena" />
+  </bean>
+
+  <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+    <property name="driverClass" value="com.mysql.jdbc.Driver" />
+    <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/spring" />
+    <property name="user" value="root" />
     <property name="password" value="cwmena" />
   </bean>
 
