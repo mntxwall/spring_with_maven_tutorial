@@ -1,8 +1,8 @@
-/home/cw/Documents/work/java/spring_with_maven_tutorial/SoundSystem/src/main/java/com/wei/test/model/Customer.java
-/home/cw/Documents/work/java/spring_with_maven_tutorial/SoundSystem/src/main/java/com/wei/test/SgtPeppers.java
-/home/cw/Documents/work/java/spring_with_maven_tutorial/SoundSystem/src/main/java/com/wei/test/JdbcCustomerDAO.java
-/home/cw/Documents/work/java/spring_with_maven_tutorial/SoundSystem/src/main/java/com/wei/test/CustomerDAO.java
-/home/cw/Documents/work/java/spring_with_maven_tutorial/SoundSystem/src/main/java/com/wei/test/App.java
-/home/cw/Documents/work/java/spring_with_maven_tutorial/SoundSystem/src/main/java/com/wei/test/CDPlayer.java
-/home/cw/Documents/work/java/spring_with_maven_tutorial/SoundSystem/src/main/java/com/wei/test/CompactDisc.java
-/home/cw/Documents/work/java/spring_with_maven_tutorial/SoundSystem/src/main/java/com/wei/test/config/CDPlayerConfig.java
+/home/cw/Documents/work/git/spring_with_maven_tutorial/SoundSystem/src/main/java/com/wei/test/config/CDPlayerConfig.java
+/home/cw/Documents/work/git/spring_with_maven_tutorial/SoundSystem/src/main/java/com/wei/test/SgtPeppers.java
+/home/cw/Documents/work/git/spring_with_maven_tutorial/SoundSystem/src/main/java/com/wei/test/CompactDisc.java
+/home/cw/Documents/work/git/spring_with_maven_tutorial/SoundSystem/src/main/java/com/wei/test/CDPlayer.java
+/home/cw/Documents/work/git/spring_with_maven_tutorial/SoundSystem/src/main/java/com/wei/test/model/Customer.java
+/home/cw/Documents/work/git/spring_with_maven_tutorial/SoundSystem/src/main/java/com/wei/test/CustomerDAO.java
+/home/cw/Documents/work/git/spring_with_maven_tutorial/SoundSystem/src/main/java/com/wei/test/JdbcCustomerDAO.java
+/home/cw/Documents/work/git/spring_with_maven_tutorial/SoundSystem/src/main/java/com/wei/test/App.java
