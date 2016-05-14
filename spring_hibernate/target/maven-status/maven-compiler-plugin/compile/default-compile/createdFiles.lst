@@ -1,0 +1,4 @@
+com/wei/test/App.class
+com/wei/test/dao/PersonDAOImpl.class
+com/wei/test/model/Person.class
+com/wei/test/dao/PersonDAO.class
