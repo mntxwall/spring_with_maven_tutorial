@@ -1,8 +1,10 @@
-com/wei/test/SgtPeppers.class
-com/wei/test/App.class
-com/wei/test/JdbcCustomerDAO.class
-com/wei/test/config/CDPlayerConfig.class
+com/wei/test/BlankDisk.class
 com/wei/test/CDPlayer.class
-com/wei/test/model/Customer.class
 com/wei/test/CompactDisc.class
+com/wei/test/SgtPeppers.class
+com/wei/test/JayChou.class
+com/wei/test/App.class
+com/wei/test/config/CDPlayerConfig.class
+com/wei/test/JdbcCustomerDAO.class
+com/wei/test/model/Customer.class
 com/wei/test/CustomerDAO.class

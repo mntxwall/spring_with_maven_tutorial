@@ -1,8 +1,6 @@
 package com.wei.test.config;
 
-import com.wei.test.CDPlayer;
-import com.wei.test.CompactDisc;
-import com.wei.test.SgtPeppers;
+import com.wei.test.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -11,9 +9,14 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class CDPlayerConfig {
-  @Bean(name="lonelyHearts")
+  /*@Bean(name="lonelyHearts")
   public CompactDisc sgtPeppers(){
     return new SgtPeppers();
+  }*/
+
+  @Bean(name="blankDisk")
+  public CompactDisc blankDisk(){
+    return new BlankDisk("YeHuiMei", "JayChou");
   }
 
   @Bean
