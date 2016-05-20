@@ -9,7 +9,11 @@
        http://www.springframework.org/schema/aop/spring-aop.xsd">
 
   <bean id="audience" class="com.wei.test.aop.Audience"/>
+
   <bean id="trackCounter" class="com.wei.test.aop.TrackCounter"/>
+
+  <bean id="song" class="com.wei.test.bean.impl.Song"/>
+
   <bean id="opera" class="com.wei.test.bean.impl.Opera"/>
   <bean id="cd" class="com.wei.test.bean.impl.BlankDisc">
     <property name="title" value="YeHuiMei"/>
@@ -33,6 +37,14 @@
               id="performance"
               expression="execution(** com.wei.test.bean.Performance.perform(..))" />
       <aop:around pointcut-ref="performance" method="watchPerformance" />
+    </aop:aspect>
+    <aop:aspect ref="song">
+      <aop:declare-parents types-matching="com.wei.test.bean.CompactDisc.*+"
+                           implement-interface="com.wei.test.bean.Lyric"
+                           default-impl="com.wei.test.bean.impl.Song"/>
+      <aop:pointcut expression="execution(* com.wei.test.bean.CompactDisc.playTrack(..))" id="playcd"/>
+      <aop:before method="show" pointcut-ref="playcd"/>
+
     </aop:aspect>
   </aop:config>
 </beans>

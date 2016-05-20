@@ -1,7 +1,9 @@
+com/wei/test/bean/impl/Song.class
 com/wei/test/bean/impl/Opera.class
-com/wei/test/aop/TrackCounter.class
 com/wei/test/bean/CompactDisc.class
+com/wei/test/aop/TrackCounter.class
 com/wei/test/bean/impl/BlankDisc.class
 com/wei/test/App.class
+com/wei/test/bean/Lyric.class
 com/wei/test/bean/Performance.class
 com/wei/test/aop/Audience.class

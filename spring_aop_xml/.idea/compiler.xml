@@ -26,7 +26,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="spring_aop_xml" target="1.8" />
+      <module name="spring_aop_xml" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
