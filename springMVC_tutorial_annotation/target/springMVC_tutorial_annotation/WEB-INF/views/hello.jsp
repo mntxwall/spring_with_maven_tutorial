@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>HelloSprint</title>
+	<title>hello</title>
 </head>
 <body>
-  <h1>Spring web service</h1>
-  <h3>Name:${name}</h3>
+<p>hello</p>
+	
 </body>
 </html>
