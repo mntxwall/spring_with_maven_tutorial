@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<p>This is ${param}</p>
+<p>This is ${name}</p>
 	
 </body>
 </html>
