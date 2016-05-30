@@ -1,16 +1,29 @@
 package com.wei.test;
 
-
 import org.springframework.stereotype.Component;
+
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /**
  * Created by cw on 5/27/16.
  */
-
+@Component
 public class UserForm {
+
+  @NotNull
+  @Size(max = 200)
   private String firstName;
+
+  @NotNull
+  @Size(max = 200)
   private String lastName;
+
+  @NotNull
+  @Size(min = 5, max = 16)
   private String userName;
+
+  @NotNull
   private String password;
 
   public UserForm(){

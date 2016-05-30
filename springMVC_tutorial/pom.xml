@@ -8,6 +8,8 @@
   <name>springMVC_tutorial Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+
+    <!--Spring FrameWork-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
@@ -18,7 +20,41 @@
       <artifactId>spring-webmvc</artifactId>
       <version>${spring.version}</version>
     </dependency>
-      </dependencies>
+
+    <!--slf4j and logback-->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>jcl-over-slf4j</artifactId>
+      <version>${jcl.slf4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback.version}</version>
+    </dependency>
+
+    <!--javax validation-->
+    <dependency>
+      <groupId>javax.validation</groupId>
+      <artifactId>validation-api</artifactId>
+      <version>1.1.0.Final</version>
+    </dependency>
+
+    <!--hibernate Validator Engine-->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-validator</artifactId>
+      <version>5.2.2.Final</version>
+    </dependency>
+
+    <!--freeMarkder-->
+    <dependency>
+      <groupId>org.freemarker</groupId>
+      <artifactId>freemarker</artifactId>
+      <version>2.3.20</version>
+    </dependency>
+
+  </dependencies>
   <build>
     <finalName>springMVC_tutorial</finalName>
     <plugins>
@@ -39,5 +75,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <spring.version>4.2.5.RELEASE</spring.version>
+    <jcl.slf4j.version>1.7.12</jcl.slf4j.version>
+    <logback.version>1.1.7</logback.version>
   </properties>
 </project>

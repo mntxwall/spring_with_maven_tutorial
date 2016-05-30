@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Register</h1>
-<form method="post" action="./save">
+<form method="post" action="/helloWorld/save">
   First Name: <input type="text" name="firstName" /><br/>
   Last Name: <input type="text" name="lastName" /><br/>
   Username: <input type="text" name="username" /><br/>
