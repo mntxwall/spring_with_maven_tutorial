@@ -5,6 +5,13 @@
 	<title>hello</title>
 </head>
 <body>
-	<p>this is from freeMarker</p>
+	<p>this is ${name} from freeMarker</p>
+
+	<ul>
+    <#list fruits as fruit>
+      <li>${fruit}
+    </#list>
+    </ul>
+
 </body>
 </html>
