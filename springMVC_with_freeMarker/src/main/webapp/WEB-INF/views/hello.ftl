@@ -1,5 +1,6 @@
+<#import "/spring.ftl" as spring >
+<#import "./my_test.ftl" as my >
 <!doctype html>
-<#import "/spring.ftl" as spring />
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -48,6 +49,7 @@
       <li>${fruit}
     </#list>
     </ul>
-
+  <@my.company name="China Telecom"/>
+  <p>This is from my_test.ftl ${my.owner}</p>
 </body>
 </html>
