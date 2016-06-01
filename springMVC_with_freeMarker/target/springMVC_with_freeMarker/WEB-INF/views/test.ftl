@@ -1,7 +1,8 @@
-<#import "./my_test.ftl" as my >
+<#--<#import "./my_test.ftl" as my >
 <#import "./my_test.ftl" as foo >
 <#import "./my_test.ftl" as bar >
-
+-->
+<#import "/spring.ftl" as spring >
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,6 +11,7 @@
 </head>
 <body>
 
+<#--
 
 <p>${my.owner}</p>
 <p>${foo.owner}</p>
@@ -20,6 +22,29 @@
 <p>${my.owner}</p>
 <p>${foo.owner}</p>
 <p>${bar.owner}</p>
+-->
+<form action="/test" method="post">
+    Name:
+
+    <input type="text" name="name">
+  <@spring.bind "user.name"/>
+  <input type="text"
+           name="${spring.status.expression}"
+           value="${spring.status.value?default("")}"/><br>
+  <#list spring.status.errorMessages as error> <b>${error}</b> <br> </#list>-->
+	<br/>
+
+    age:
+    <input type="text" name="age">
+<#--<@spring.bind "user.age"/>
+    <input type="text"
+           name="${spring.status.expression}"
+           value="${spring.status.value?default("")}"/><br>
+<#list spring.status.errorMessages as error> <b>${error}</b> <br> </#list>
+-->
+
+</form>
+
 
 
 </body>

@@ -13,6 +13,9 @@ public class User {
     @NotNull
     private String age;
 
+    //default Initialer
+    public User(){}
+
     public User(String name, String age) {
         this.name = name;
         this.age = age;
