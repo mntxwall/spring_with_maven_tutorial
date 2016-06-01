@@ -20,6 +20,7 @@
     <property name="freemarkerVariables">
       <map>
         <entry key="xml_escape" value-ref="fmXmlEscape"/>
+        <entry key="default_encoding" value="UTF-8"/>
       </map>
     </property>
   </bean>
