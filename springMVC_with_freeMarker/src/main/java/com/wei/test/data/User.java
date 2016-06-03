@@ -1,25 +1,20 @@
 package com.wei.test.data;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /**
  * Created by cw on 6/1/16.
  */
 public class User {
 
-    @NotNull
+    @Size(min = 2, max = 10)
     private String name;
 
-    @NotNull
+    @NotEmpty
     private String age;
-
-    //default Initialer
-    public User(){}
-
-    public User(String name, String age) {
-        this.name = name;
-        this.age = age;
-    }
 
     public String getAge() {
         return age;

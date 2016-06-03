@@ -1,3 +1,4 @@
-com/wei/test/HomeController.class
 com/wei/test/data/User.class
 com/wei/test/TestController.class
+com/wei/test/data/FileBucket.class
+com/wei/test/HomeController.class

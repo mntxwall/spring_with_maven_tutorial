@@ -7,10 +7,10 @@
 	<title>hello</title>
 </head>
 <body>
-  <p>this is ${name} from freeMarker</p>
+<#--  <p>this is ${name} from freeMarker</p>
   <p>${name?string[0]}</p>
   <p>${name[0..3]}</p>
-  <p>${name[0..<4]}</p>
+  <p>${name[0..<4]}</p>-->
 
   <p>${mouse!"Eated"}</p>
   <#assign mouse = "jerry"/>
@@ -44,11 +44,11 @@
     ${c} . ${halfc}<#if last> LAST !</#if>
   </@repeat>
 
-	<ul>
+<#--	<ul>
     <#list fruits as fruit>
       <li>${fruit}
     </#list>
-    </ul>
+    </ul>-->
   <@my.company name="China Telecom"/>
   <p>This is from my_test.ftl ${my.owner}</p>
 </body>

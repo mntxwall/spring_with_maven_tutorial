@@ -13,6 +13,8 @@
 
   <context:component-scan base-package="com.wei.test"/>
 
+  <bean class="org.springframework.web.multipart.support.StandardServletMultipartResolver"/>
+
   <!--<bean class="com.wei.test.UserForm" />-->
 
   <!--<bean id="user" class="com.wei.test.data.User"/>-->
@@ -23,7 +25,6 @@
       <map>
         <entry key="xml_escape" value-ref="fmXmlEscape"/>
         <entry key="default_encoding" value="UTF-8"/>
-        <entry key="template_exception_handler" value="html_debug"/>
       </map>
     </property>
   </bean>
@@ -33,6 +34,10 @@
   <bean id="viewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
     <property name="prefix" value=""/>
     <property name="suffix" value=".ftl"/>
+    <property name="contentType" value="text/html;charset=utf-8"/>
+    <property name="exposeSpringMacroHelpers" value="true"/>
+    <property name="exposeRequestAttributes" value="true"/>
+    <property name="exposeSessionAttributes" value="true"/>
   </bean>
 
 

@@ -26,16 +26,20 @@
 <form action="/test" method="post">
     Name:
 
-    <input type="text" name="name">
-  <@spring.bind "user.name"/>
+ <!--   <input type="text" name="name">-->
+  <@spring.bind "userinfo.name"/>
   <input type="text"
            name="${spring.status.expression}"
            value="${spring.status.value?default("")}"/><br>
-  <#list spring.status.errorMessages as error> <b>${error}</b> <br> </#list>-->
+
+    ${spring.status.errorMessage!""}
+  <#--<#list spring.status.errorMessages as error> <b>${error}</b> <br> </#list>-->
 	<br/>
 
     age:
     <input type="text" name="age">
+
+    <input type="submit" value="gogo">
 <#--<@spring.bind "user.age"/>
     <input type="text"
            name="${spring.status.expression}"
