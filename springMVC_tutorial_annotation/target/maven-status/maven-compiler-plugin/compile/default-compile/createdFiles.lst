@@ -1,6 +1,6 @@
 com/wei/test/config/SpittrWebAppInitializer.class
-com/wei/test/config/WebConfig.class
 com/wei/test/web/HelloController.class
-com/wei/test/data/SpittleRepository.class
+com/wei/test/config/WebConfig.class
 com/wei/test/web/HomeController.class
+com/wei/test/data/SpittleRepository.class
 com/wei/test/Spittle.class

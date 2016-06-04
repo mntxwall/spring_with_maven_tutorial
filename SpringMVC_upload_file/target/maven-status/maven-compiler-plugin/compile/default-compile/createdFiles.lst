@@ -1,0 +1,7 @@
+com/wei/test/model/MultiFileBucket.class
+com/wei/test/controller/FileUploadController.class
+com/wei/test/util/MultiFileValidator.class
+com/wei/test/configuration/HelloWorldConfiguration.class
+com/wei/test/configuration/HelloWorldInitializer.class
+com/wei/test/model/FileBucket.class
+com/wei/test/util/FileValidator.class
