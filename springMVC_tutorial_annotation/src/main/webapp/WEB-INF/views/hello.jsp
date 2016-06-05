@@ -5,7 +5,7 @@
 	<title>hello</title>
 </head>
 <body>
-<p>hello</p>
+<p>hello ${names}</p>
 	
 </body>
 </html>

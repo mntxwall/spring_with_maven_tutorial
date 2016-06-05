@@ -1,0 +1,3 @@
+com/wei/test/web/HelloWorldController.class
+com/wei/test/config/HelloWorldWebAppInitializer.class
+com/wei/test/config/WebConfig.class
