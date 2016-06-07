@@ -49,14 +49,6 @@ public class HelloWorldController {
             catch (Exception e) {
 
             }
-           /* try {
-
-                file.transferTo(new File("111.jpg"));
-
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }*/
 
             model.addAttribute("name", "Wei");
             model.addAttribute("filename", file.getOriginalFilename());

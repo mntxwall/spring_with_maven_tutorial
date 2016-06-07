@@ -1,3 +1,3 @@
-/home/cw/IdeaProjects/springMVC_HelloWorld/src/main/java/com/wei/test/web/HelloWorldController.java
-/home/cw/IdeaProjects/springMVC_HelloWorld/src/main/java/com/wei/test/config/WebConfig.java
-/home/cw/IdeaProjects/springMVC_HelloWorld/src/main/java/com/wei/test/config/HelloWorldWebAppInitializer.java
+/home/cw/Documents/work/java/spring_with_maven_tutorial/springMVC_HelloWorld/src/main/java/com/wei/test/config/HelloWorldWebAppInitializer.java
+/home/cw/Documents/work/java/spring_with_maven_tutorial/springMVC_HelloWorld/src/main/java/com/wei/test/web/HelloWorldController.java
+/home/cw/Documents/work/java/spring_with_maven_tutorial/springMVC_HelloWorld/src/main/java/com/wei/test/config/WebConfig.java
