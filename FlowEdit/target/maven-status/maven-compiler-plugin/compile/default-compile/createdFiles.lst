@@ -1,3 +1,6 @@
-com/wei/project/config/WebConfig.class
+com/wei/project/controller/LoginController.class
+com/wei/project/entities/User.class
+com/wei/project/controller/DefaultController.class
 com/wei/project/controller/HomeController.class
+com/wei/project/config/WebConfig.class
 com/wei/project/config/FlowEditWebApp.class

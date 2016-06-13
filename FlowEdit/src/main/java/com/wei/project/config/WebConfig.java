@@ -40,6 +40,7 @@ public class WebConfig extends WebMvcConfigurerAdapter{
         FreeMarkerViewResolver f = new FreeMarkerViewResolver();
         f.setPrefix("");
         f.setSuffix(".ftl");
+        f.setContentType("text/html;charset=utf-8");
         return f;
     }
 
