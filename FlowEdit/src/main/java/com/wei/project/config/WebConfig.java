@@ -19,7 +19,7 @@ import java.util.Map;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.wei.project")
+@ComponentScan("com.wei.project.config")
 
 public class WebConfig extends WebMvcConfigurerAdapter{
 
