@@ -1,6 +1,10 @@
 /home/cw/Documents/work/java/spring_with_maven_tutorial/FlowEdit/src/main/java/com/wei/project/entities/User.java
+/home/cw/Documents/work/java/spring_with_maven_tutorial/FlowEdit/src/main/java/com/wei/project/dao/UserDAOImpl.java
+/home/cw/Documents/work/java/spring_with_maven_tutorial/FlowEdit/src/main/java/com/wei/project/controller/RegisterController.java
 /home/cw/Documents/work/java/spring_with_maven_tutorial/FlowEdit/src/main/java/com/wei/project/config/FlowEditWebApp.java
 /home/cw/Documents/work/java/spring_with_maven_tutorial/FlowEdit/src/main/java/com/wei/project/controller/DefaultController.java
+/home/cw/Documents/work/java/spring_with_maven_tutorial/FlowEdit/src/main/java/com/wei/project/dao/UserDAO.java
 /home/cw/Documents/work/java/spring_with_maven_tutorial/FlowEdit/src/main/java/com/wei/project/controller/HomeController.java
 /home/cw/Documents/work/java/spring_with_maven_tutorial/FlowEdit/src/main/java/com/wei/project/config/WebConfig.java
 /home/cw/Documents/work/java/spring_with_maven_tutorial/FlowEdit/src/main/java/com/wei/project/controller/LoginController.java
+/home/cw/Documents/work/java/spring_with_maven_tutorial/FlowEdit/src/main/java/com/wei/project/config/DBConfig.java
